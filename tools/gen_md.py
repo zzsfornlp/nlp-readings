@@ -163,6 +163,8 @@ def read_csv(fname, split=",", split2="|"):
     heads = lines[0]
     contents = []
     for l2 in lines[1:]:
+        if len(l2) == 0 or (len(l2)==1 and l2[0]==""):
+            continue    
         assert len(l2) == len(heads), "Unmatched data"
         one = [c.split(split2) for c in l2]
         contents.append(one)
@@ -182,6 +184,9 @@ class MarkdownRender(object):
             oo = "%s%s-%s" % ("19" if o[0:2]>"50" else "20", o[0:2], o[2:4])
         elif f == "link":
             o = o[0]
+            # todo(warn): special rule for aclweb
+            if not o.startswith("http"):
+                o = "http://aclweb.org/anthology/" + o
             oo = "[[paper]](%s), [[bib]](%s)" % (o, o+".bib")
         elif f == "tag":
             oo = ", ".join(["[[%s]](%s.md)" % (z, z) for z in sorted(o)])
@@ -222,11 +227,11 @@ def init():
     # step1: filter
     parser.add_argument("--filter", type=str, default=None, help='Filter like "(year==2016||year==2015)&&(proc==ACL)", currently only ==.')
     # step2: sort
-    parser.add_argument("--sort_fields", type=str, default="year,date,proc,link", help='Fields for sorting (sep by ",") (default: %(default)s).')
+    parser.add_argument("--sort_fields", type=str, default="year,proc,link", help='Fields for sorting (sep by ",") (default: %(default)s).')
     # step3: separate / summary / show
     parser.add_argument("--sep_fields", type=str, default="year,proc", help='Fields for separating (sep by ",") (default: %(default)s).')
     parser.add_argument("--sum_fields", type=str, default="year,proc,title", help='Fields for summary (sep by ",") (default: %(default)s).')
-    parser.add_argument("--show_fields", type=str, default="year,date,proc,title,link,tag", help='Fields for printing (sep by ","; <empty> means all). (default: %(default)s)')
+    parser.add_argument("--show_fields", type=str, default="year,proc,title,link,tag", help='Fields for printing (sep by ","; <empty> means all). (default: %(default)s)')
     a = parser.parse_args()
     # deal with them
     args = vars(a)
@@ -278,3 +283,4 @@ echo "done"
 
 if __name__ == '__main__':
     main()
+
