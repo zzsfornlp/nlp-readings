@@ -1,0 +1,173 @@
+year,proc,tag,title,link,description
+2013,EMNLP,model,Recurrent Continuous Translation Models,D13-1176,CNN-based s2s translating improved with reranking.
+2014,NIPS,model,Sequence to Sequence Learning with Neural Networks,https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks,RNN-based s2s model. 
+2014,EMNLP,model,Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation,D14-1179,RNN-based enc-dec as features for smt. 
+2014,WORKSHOP,model|phrase,Overcoming the Curse of Sentence Length for Neural Machine Translation using Automatic Segmentation,W14-4009,Translating segments separately and concatenating them.
+2014,WORKSHOP,analysis,On the Properties of Neural Machine Translation: Encoder-Decoder Approaches,W14-4012,Analyzing the properties of NMT.
+2015,ICLR,model|attention,Neural Machine Translation by Jointly Learning to Align and Translate,https://arxiv.org/abs/1409.0473,Attention s2s.
+2015,ACL,vocab,On Using Very Large Target Vocabulary for Neural Machine Translation,P15-1001,Large traget vocab but only updating a subset of them when training.
+2015,ACL,vocab,Addressing the Rare Word Problem in Neural Machine Translation,P15-1002,Augment UNK with position and alignment info.
+2015,EMNLP,vocab,Variable-Length Word Encodings for Neural Translation Models,D15-1249,Encode words with variable tokens.
+2015,EMNLP,model|attention,Effective Approaches to Attention-based Neural Machine Translation,D15-1166,Different types of attention and input-feeding.
+2015,NIPS,train,Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks,https://papers.nips.cc/paper/5956-scheduled-sampling-for-sequence-prediction-with-recurrent-neural-networks,Training with predicted y-feeding.
+2016,ACL,vocab,Achieving Open Vocabulary Neural Machine Translation with Hybrid Word-Character Models,P16-1100,Hybrid model with char decoding for UNK.
+2016,ACL,vocab,Pointing the Unknown Words,P16-1014,As the title suggests.
+2016,ACL,syntax|attention,Tree-to-Sequence Attentional Neural Machine Translation,P16-1078,Source-side phrase tree.
+2016,ACL,semi,Improving Neural Machine Translation Models with Monolingual Data,P16-1009,Synthetic source sentences with back translation.
+2016,ACL,model|smt,Modeling Coverage for Neural Machine Translation,P16-1008,Modeling coverage with coverage embedding for source words.
+2016,ACL,model|vocab,A Character-Level Decoder without Explicit Segmentation for Neural Machine Translation,P16-1160,Biscale decoder at char-level.
+2016,ACL,semi,Semi-Supervised Learning for Neural Machine Translation,P16-1185,With two-directions and auto-encoders.
+2016,ACL,train,Minimum Risk Training for Neural Machine Translation,P16-1159,RL-like training with sampling.
+2016,ACL,vocab,Neural Machine Translation of Rare Words with Subword Units,P16-1162,BPE.
+2016,ACL,vocab,Vocabulary Manipulation for Neural Machine Translation,P16-2021,Selected traget vocab.
+2016,ACL,syntax|smt,Syntactically Guided Neural Machine Translation,P16-2049,Decoding with smt lattice.
+2016,ACL,vocab,Character-based Neural Machine Translation,P16-2058,Char-encoding for src.
+2016,ACL,vocab,Strategies for Training Large Vocabulary Neural Language Models,P16-1186,About target vocab.
+2016,EMNLP,multi,Zero-Resource Translation with Multi-Lingual Neural Machine Translation,D16-1026,As the title suggests.
+2016,EMNLP,analysis,Neural versus Phrase-Based Machine Translation Quality: a Case Study,D16-1025,As the title suggests.
+2016,EMNLP,model,Memory-enhanced Decoder for Neural Machine Translation,D16-1027,As the title suggests.
+2016,EMNLP,attention|smt,Supervised Attentions for Neural Machine Translation,D16-1249,Additional alignment object.
+2016,EMNLP,model|train,Variational Neural Machine Translation,D16-1050,With a continuous latent variable.
+2016,EMNLP,analysis,Why Neural Translations are the Right Length,D16-1248,As the title suggests.
+2016,EMNLP,model|smt,Coverage Embedding Models for Neural Machine Translation,D16-1096,Coverage Embedding Models.
+2016,EMNLP,train,Sequence-to-Sequence Learning as Beam-Search Optimization,D16-1137,Global training with LaSO.
+2016,EMNLP,multi,Transfer Learning for Low-Resource Neural Machine Translation,D16-1163,As the title suggests.
+2016,EMNLP,train|prac,Sequence-Level Knowledge Distillation,D16-1139,Distillation to a smaller model.
+2016,EMNLP,vocab|smt,Incorporating Discrete Translation Lexicons into Neural Machine Translation,D16-1162,Adding bias and linear interpolation.
+2016,EMNLP,semi,Exploiting Source-side Monolingual Data in Neural Machine Translation,D16-1160,Self-learning and multi-task learning.
+2016,EMNLP,analysis|syntax,Does String-Based Neural MT Learn Source Syntax,D16-1159,As the title suggests.
+2016,NIPS,train,Dual Learning for Machine Translation,https://papers.nips.cc/paper/6469-dual-learning-for-machine-translation,Dual translation with RL.
+2016,NIPS,train,Reward Augmented Maximum Likelihood for Neural Structured Prediction,https://papers.nips.cc/paper/6547-reward-augmented-maximum-likelihood-for-neural-structured-prediction,Training with loss-enhanced sampled instances.
+2016,AAAI,smt|vocab,Improved Neural Machine Translation with SMT Features,https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12189,SMT plus NMT under log-linear framework.
+2016,COLING,model,Topic-Informed Neural Machine Translation,C16-1170,As the title suggests.
+2016,COLING,model|smt|attention,Improving Attention Modeling with Implicit Distortion and Fertility for Machine Translation,C16-1290,As the title suggests.
+2016,COLING,attention|smt,Neural Machine Translation with Supervised Attention,C16-1291,Additional alignment object.
+2016,COLING,analysis,What Makes Word-level Neural Machine Translation Hard: A Case Study on English-German Translation,C16-1301,As the title suggests.
+2016,COLING,smt|vocab,Pre-Translation for Neural Machine Translation,C16-1172,Hyp plus src to trg.
+2016,COLING,model|attention,Interactive Attention for Neural Machine Translation,C16-1205,Modeling src-side encodings in the decoding process.
+2016,IJCAI,vocab,Towards Zero Unknown Word in Neural Machine Translation,https://www.ijcai.org/Proceedings/16/Papers/405.pdf,Replacing RareWords with Similar words.
+2016,IJCAI,model|attention,Agreement-Based Joint Training for Bidirectional Attention-Based Neural Machine Translation,https://www.ijcai.org/Proceedings/16/Papers/392.pdf,Additional attention agreement object.
+2016,CoNLL,prac,Compression of Neural Machine Translation Models via Pruning,K16-1029,Pruning to a smaller model.
+2016,NAACL,multi,Multi-Way Multilingual Neural Machine Translation with a Shared Attention Mechanism,N16-1101,Shared attention.
+2016,NAACL,model|search,Agreement on Target-bidirectional Neural Machine Translation,N16-1046,Scoring with two-way.
+2016,NAACL,smt|attention,Incorporating Structural Alignment Biases into an Attentional Neural Translation Model,N16-1102,As the title suggests.
+2016,NAACL,model,Controlling Politeness in Neural Machine Translation via Side Constraints,N16-1005,Sepcial token at the end of src.
+2016,NAACL,multi|attention,Multi-Source Neural Translation,N16-1004,Multi-src attention.
+2016,TACL,model,Deep Recurrent Models with Fast-Forward Connections for Neural Machine Translation,Q16-1027,As the title suggests.
+2016,ICLR,train,Sequence Level Training with Recurrent Neural Networks,https://arxiv.org/abs/1511.06732,RL training.
+2017,EACL,model|attention,Neural Machine Translation with Recurrent Attention Modeling,E17-2061,RNN for attention.
+2017,EACL,train,Learning to Translate in Real-time with Neural Machine Translation,E17-1099,Learning actions with RL.
+2017,EACL,prac,Nematus: a Toolkit for Neural Machine Translation,E17-3017,Toolkit.
+2017,EACL,analysis,A Multifaceted Evaluation of Neural versus Phrase-Based Machine Translation for 9 Language Directions,E17-1100,As the title suggests.
+2017,EACL,analysis,How Grammatical is Character-level Neural Machine Translation? Assessing MT Quality with Contrastive Translation Pairs,E17-2060,As the title suggests.
+2017,EACL,train|smt,Neural Machine Translation by Minimising the Bayes-risk with Respect to Syntactic Translation Lattices,E17-2058,As the title suggests.
+2017,ACL,syntax,Modeling Source Syntax for Neural Machine Translation,P17-1064,Source syntax as tags.
+2017,ACL,model,Deep Neural Machine Translation with Linear Associative Unit,P17-1013,As the title suggests.
+2017,ACL,syntax,Sequence-to-Dependency Neural Machine Translation,P17-1065,Shift-reduce parsing plus NMT and joint learning.
+2017,ACL,vocab,Neural Machine Translation via Binary Code Prediction,P17-1079,Encode target words.
+2017,ACL,analysis,What do Neural Machine Translation Models Learn about Morphology,P17-1080,As the title suggests.
+2017,ACL,train|smt,Prior Knowledge Integration for Neural Machine Translation using Posterior Regularization,P17-1139,Additional object of KL.
+2017,ACL,analysis,Visualizing and Understanding Neural Machine Translation,P17-1106,Layer-wise Relevance Propagation.
+2017,ACL,model,Incorporating Word Reordering Knowledge into Attention-based Neural Machine Translation,P17-1140,Distortion Models for attention-based NMT.
+2017,ACL,train,Bandit Structured Prediction for Neural Sequence-to-Sequence Learning Julia,P17-1138,RL-like training.
+2017,ACL,search,Lexically Constrained Decoding for Sequence Generation Using Grid Beam Search,P17-1141,Grid beam search (for word constrains).
+2017,ACL,model|phrase,Chunk-based Decoder for Neural Machine Translation,P17-1174,Two layers with different connections explicitly modeling chunks.
+2017,ACL,multi|attention,Doubly-Attentive Decoder for Multi-modal Neural Machine Translation,P17-1175,As the title suggests.
+2017,ACL,multi|train,A Teacher-Student Framework for Zero-Resource Neural Machine Translation,P17-1176,As the title suggests.
+2017,ACL,model,A Convolutional Encoder Model for Neural Machine Translation,P17-1012,CNN Encoder.
+2017,ACL,syntax,Improved Neural Machine Translation with a Syntax-Aware Encoder and Decoder,P17-1177,A bidirectional tree encoder and a tree-cov model.
+2017,ACL,syntax,Learning to Parse and Translate Improves Neural Machine Translation,P17-2012,Joint dependency and NMT.
+2017,ACL,multi|attention,Attention Strategies for Multi-Source Sequence-to-Sequence Learning,P17-2031,As the title suggests.
+2017,ACL,syntax,Towards String-to-Tree Neural Machine Translation,P17-2021,String to a linearized and lexicalized constituency tree
+2017,ACL,model|multi,Neural System Combination for Machine Translation,P17-2060,Attention from multiple encoders.
+2017,ACL,semi|vocab,Data Augmentation for Low-Resource Neural Machine Translation,P17-2090,Data Augmentation by changing words.
+2017,ACL,model|phrase,Chunk-Based Bi-Scale Decoder for Neural Machine Translation,P17-2092,Two layers with different connections explicitly modeling chunks.
+2017,ACL,domain,Sentence Embedding for Neural Machine Translation Domain Adaptation,P17-2089,Selecting sentences for domain adaptation.
+2017,ACL,domain,An Empirical Comparison of Domain Adaptation Methods for Neural Machine Translation,P17-2061,As the title suggests.
+2017,ACL,prac|vocab,Speeding Up Neural Machine Translation Decoding by Shrinking Run-time Vocabulary,P17-2091,As the title suggests.
+2017,ACL,prac,OpenNMT: Open-Source Toolkit for Neural Machine Translation,P17-4012,Toolkit.
+2017,ACL,train,Differentiable Scheduled Sampling for Credit Assignment,P17-2058,Training with alpha-soft argmax.
+2017,EMNLP,multi,Incorporating Global Visual Features into Attention-Based Neural Machine Translation,D17-1106,As the title suggests.
+2017,EMNLP,model,Neural Lattice-to-Sequence Models for Uncertain Inputs,D17-1146,Encoding on the source lattice.
+2017,EMNLP,vocab|smt,Memory-augmented Neural Machine Translation,D17-1147,Additional memory and attention strucutre for external vocabs.
+2017,EMNLP,domain,Dynamic Data Selection for Neural Machine Translation,D17-1148,Vary the selected subset of training data between different training epochs.
+2017,EMNLP,phrase|smt,Translating Phrases in Neural Machine Translation,D17-1150,Combining SMT and NMT model.
+2017,EMNLP,phrase|smt,Neural Machine Translation Leveraging Phrase-based Models in a Hybrid Search,D17-1149,Log linear combination and hybrid search.
+2017,EMNLP,model|syntax,Towards Bidirectional Hierarchical Representations for Attention-Based Neural Machine Translation,D17-1151,Bidirectional encoding on a phrase tree.
+2017,EMNLP,model|syntax,Neural Machine Translation with Source-Side Latent Graph Parsing,D17-1012,Encoding with src modified(relaxed) dep-representations.
+2017,EMNLP,semi,Unsupervised Pretraining for Sequence to Sequence Learning,D17-1039,Pretraining for LM.
+2017,EMNLP,model,Neural Machine Translation with Word Predictions,D17-1013,Extra word predictions tasks help training.
+2017,EMNLP,train|search,Towards Decoding as Continuous Optimisation in Neural Machine Translation,D17-1014,As the title suggests no recomb-search of decoding.
+2017,EMNLP,analysis,A Causal Framework for Explaining the Predictions of Black-box Sequence-to-sequence Models,D17-1042,Analyzing the relations of input-output.
+2017,EMNLP,multi,An empirical study on the effectiveness of images in Multimodal Neural Machine Translation,D17-1096,As the title suggests.
+2017,EMNLP,train,Reinforcement Learning for Bandit Neural Machine Translation with Simulated Human Feedback,D17-1153,Training with only feedbacks and no ref.
+2017,EMNLP,train|prac,Towards Compact and Fast Neural Machine Translation Using a Combined Method,D17-1154,Speeding up and sequence editing as gold.
+2017,EMNLP,train|prac,Regularization techniques for fine-tuning in neural machine translation,D17-1156,As the title suggests.
+2017,EMNLP,domain,InstanceWeighting for Neural Machine Translation Domain Adaptation,D17-1155,As the title suggests.
+2017,EMNLP,train|search,Trainable Greedy Decoding for Neural Machine Translation,D17-1209,Stacking another one (trained with RL) for manipulating hidden layer.
+2017,EMNLP,prac,Unfolding and Shrinking Neural Machine Translation Ensembles,D17-1207,As the title suggests.
+2017,EMNLP,semi,Using Target-side Monolingual Data for Neural Machine Translation through Multi-task Learning,D17-1158,As the title suggests.
+2017,EMNLP,model|syntax,Graph Convolutional Encoders for Syntax-aware Neural Machine Translation,D17-1208,Encoding with dependencies.
+2017,EMNLP,model|syntax,Neural Machine Translation with Source Dependency Representation,D17-1303,Encoding with dependencies.
+2017,EMNLP,model,Exploiting Cross-Sentence Context for Neural Machine Translation,D17-1300,As the title suggests.
+2017,EMNLP,prac,Sharp Models on Dull Hardware: Fast and Accurate Neural Machine Translation Decoding on the CPU,D17-1299,Speeding up.
+2017,EMNLP,search,When to Finish? Optimal Beam Search for Neural Text Generation (modulo beam size),D17-1226,As the title suggests.
+2017,AAAI,model|search,Neural Machine Translation with Reconstruction,https://arxiv.org/abs/1611.01874,Reconstruction as auto-encoder.
+2017,AAAI,smt,Neural Machine Translation Advised by Statistical Machine Translation,https://arxiv.org/abs/1610.05150,As the title suggests.
+2017,IJCAI,model|multi,ME-MD: An Effective Framework for Neural Machine Translation with Multiple Encoders and Decoders,https://www.ijcai.org/proceedings/2017/474,Stacking multiple models.
+2017,IJCAI,syntax,Improved Neural Machine Translation with Source Syntax,https://www.ijcai.org/proceedings/2017/584,Additional reordered seq by dep.
+2017,IJCAI,multi,Maximum Expected Likelihood Estimation for Zero-Resource Neural Machine Translation,https://www.ijcai.org/proceedings/2017/594,As the title suggests.
+2017,TACL,model,Context Gates for Neural Machine Translation,Q17-1007,Context gates for src and trg.
+2017,WORKSHOP,search,Beam Search Strategies for Neural Machine Translation,W17-3207,As the title suggests.
+2017,WORKSHOP,analysis,Six Challenges for Neural Machine Translation,W17-3204,As the title suggests.
+2017,ARXIV,prac,Neural Machine Translation and Sequence-to-sequence Models: A Tutorial,https://arxiv.org/abs/1703.01619,Tutorial.
+2017,WORKSHOP,prac,An Empirical Study of Mini-Batch Creation Strategies for Neural Machine Translation,W17-3208,As the title suggests.
+2017,WORKSHOP,phrase|model,Toward Neural Phrase-based Machine Translation,https://deepstruct.github.io/ICML17/1stDeepStructWS_paper_7.pdf,As the title suggests.
+2016,ARXIV,model|prac,Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation,https://arxiv.org/abs/1609.08144,Google's NMT.
+2016,ARXIV,model,Neural Machine Translation in Linear Time,https://arxiv.org/abs/1610.10099,S2s with conv-net.
+2017,WORKSHOP,analysis|search,Analyzing Neural MT Search and Model Performance,W17-3202,Search-error or model-error.
+2017,WORKSHOP,model|syntax,Towards Neural Machine Translation with Latent Tree Attention,W17-4303,As the title suggests.
+2016,ARXIV,search,A Simple Fast Diverse Decoding Algorithm for Neural Generation,https://arxiv.org/abs/1611.08562,Encouriging diversity.
+2017,NIPS,model,Attention Is All You Need,https://arxiv.org/abs/1706.03762,No rec layers.
+2017,ARXIV,model|vocab,Improving Lexical Choice in Neural Machine Translation,https://arxiv.org/abs/1710.01329,As the title suggests.
+2017,TACL,model|multi,Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation,Q17-1024,One model for all languages
+2017,ARXIV,train|prac,Curriculum Learning and Minibatch Bucketing in Neural Machine Translation,https://arxiv.org/abs/1707.09533,As the title suggests.
+2017,ARXIV,model,Deep Architectures for Neural Machine Translation,https://arxiv.org/abs/1707.07631,As the title suggests.
+2017,ARXIV,search|train,A Continuous Relaxation of Beam Search for End-to-end Training of Neural Sequence Models,https://arxiv.org/abs/1708.00111,As the title suggests.
+2017,ARXIV,train|search,Learning to Decode for Future Success,https://arxiv.org/abs/1701.06549,The model can be thought of as a simple version of the actor-critic model.
+2017,WORKSHOP,prac,Stronger Baselines for Trustable Results in Neural Machine Translation,W17-3203,As the title suggests.
+2016,ACL,model,Incorporating Copying Mechanism in Sequence-to-Sequence Learning,P16-1154,Copying mechanism.
+2016,EMNLP,model|search,Controlling Output Length in Neural Encoder-Decoders,D16-1140,As the title suggests.
+2016,EMNLP,model|train,Length bias in Encoder Decoder Models and a Case for Global Conditioning,D16-1158,Globally conditioned enc-dec models.
+2017,EMNLP,model|attention|search,Generating High-Quality and Informative Conversation Responses with Sequence-to-Sequence Models,D17-1234,Self-attention to the decoder and seg-by-seg reranking.
+2017,ARXIV,prac,Massive Exploration of Neural Machine Translation Architectures,https://arxiv.org/abs/1703.03906,Hyper-param tuning.
+2017,ARXIV,semi,Unsupervised Neural Machine Translation,https://arxiv.org/abs/1710.11041,Shared encider.
+2017,ARXIV,semi,Unsupervised Machine Translation Using Monolingual Corpora Only,https://arxiv.org/abs/1711.00043,As the title suggests.
+2017,ICLR,model|train,Structured Attention Networks,https://openreview.net/forum?id=HkE0Nvqlg,CRF as inner layer and back-prop from marginal prob.
+2017,ICLR,model|train,An Actor-Critic Algorithm for Sequence Prediction,https://arxiv.org/abs/1607.07086,Training with learned oracle.
+2017,ARXIV,train,Classical Structured Prediction Losses for Sequence to Sequence Learning,http://arxiv.org/abs/1711.04956,As the title suggests.
+2017,ARXIV,model,Bridging Source and TargetWord Embeddings for Neural Machine Translation,http://arxiv.org/abs/1711.05380,As the title suggests.
+2017,IJCNLP,model,Context-Aware Smoothing for Neural Machine Translation,I17-1002,As the title suggests.
+2017,IJCNLP,syntax,Improving Sequence to Sequence Neural Machine Translation by Utilizing Syntactic Dependency Information,I17-1003,Generating linearized tree.
+2017,IJCNLP,analysis|attention,What does Attention in Neural Machine Translation Pay Attention to?,I17-1004,As the title suggests.
+2017,IJCNLP,search|smt,Improving Neural Machine Translation through Phrase-based Forced Decoding,I17-1016,Reranking NMT-output with SMT.
+2017,IJCNLP,search|smt|model,Towards Neural Machine Translation with Partially Aligned Corpora,I17-1039,As the title suggests.
+2016,MT,model|search,Alignment-Based Neural Machine Translation,http://www.aclweb.org/anthology/W16-2206,As the title suggests.
+2017,IJCNLP,search|domain,Neural Lattice Search for Domain Adaptation in Machine Translation,I17-2004,As the title suggests.
+2017,EACL,multi,Paraphrasing Revisited with Neural Machine Translation,E17-1038,Paraf by back-translation with multi-src.
+2018,ICLR,analysis,Synthetic and Natural Noise Both Break Neural Machine Translation,https://openreview.net/forum?id=BJ8vJebC-,Change every word?
+2018,ICLR,model,Depthwise Separable Convolutions for Neural Machine Translation,https://openreview.net/forum?id=S1jBcueAb,SliceNet.
+2018,ICLR,model|train,Non-autoregressive neural machine translation,https://openreview.net/forum?id=B1l8BtlCb,Parallel prediction.
+2018,ICLR,semi,Word translation without parallel data,https://openreview.net/forum?id=H196sainb,Linear mapping with complex training.
+2018,ICLR,model|phrase,Towards Neural Phrase-based Machine Translation,https://openreview.net/forum?id=HktJec1RZ,Explicitly only one to many.
+2016,ARXIV,model|phrase,Neural Machine Translation with External Phrase Memory,https://arxiv.org/abs/1606.01792,Special categories of phrases.
+2018,ICLR,semi,Unsupervised Neural Machine Translation,https://openreview.net/forum?id=Sy2ogebAW,Denoise+BackT.
+2018,ICLR,semi,Unsupervised Machine Translation Using Monolingual Corpora Only,https://openreview.net/forum?id=rkYTTf-AZ&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=piqcy,Denoise+BackT+Adv.
+2018,AAAI,model|syntax,Syntax-Directed Attention for Neural Machine Translation Kehai,http://arxiv.org/abs/1711.04231,As the title suggests.
+2018,AAAI,model|multi,Search Engine Guided Non-Parametric Neural Machine Translation,https://arxiv.org/abs/1705.07267,More context and train-test similarity.
+2018,AAAI,train,Neural Machine Translation with Gumbel-Greedy Decoding,https://arxiv.org/abs/1706.07518,Why gumbel?
+2018,AAAI,model|multi,Asynchronous Bidirectional Decoding for Neural Machine Translation,https://arxiv.org/abs/1801.05122,Bidirection+multi.
+2018,AAAI,multi,Zero-Resource Neural Machine Translation with Multi-Agent Communication Game,https://arxiv.org/abs/1802.03116,Image as a pivot language.
+2018,AAAI,semi,Joint Training for Neural Machine Translation Models with Monolingual Data,https://arxiv.org/abs/1803.00353,Bi-direction back-translation.
+2018,AAAI,semi|train,Dual Transfer Learning for Neural Machine Translation with Marginal Distribution Regularization,https://www.microsoft.com/en-us/research/publication/dual-transfer-learning-neural-machine-translation-marginal-distribution-regularization/,Back-trans for sampling.
+
